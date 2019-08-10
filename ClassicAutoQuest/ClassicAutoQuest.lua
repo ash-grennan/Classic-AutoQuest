@@ -2,7 +2,7 @@
 -- Name: ClassicAutoQuest
 -- Author: BobNudd
 -- Description: A minimalist auto quest acceptor/hand-in.
--- Version: 1.0.0
+-- Version: 1.1.0
 
 
 
