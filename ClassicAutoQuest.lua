@@ -6,11 +6,26 @@
 
 
 
-local faster = CreateFrame("Frame")
-faster:RegisterEvent("QUEST_DETAIL")
-faster:SetScript("OnEvent", function()
+local detail = CreateFrame("Frame")
+detail:RegisterEvent("QUEST_DETAIL")
+detail:SetScript("OnEvent", function()
 	 AcceptQuest();
 end)
+
+
+local gossip = CreateFrame("Frame")
+gossip:RegisterEvent("GOSSIP_SHOW")
+gossip:SetScript("OnEvent", function()
+	if GetNumGossipAvailableQuests() > 0 then
+		local arg = { GetGossipAvailableQuests() }
+		local i = 1
+		while(arg[i]) do
+			SelectGossipAvailableQuest(i);
+			i = i + 1;
+		end
+	end
+end)
+
 
 local complete = CreateFrame("Frame")
 complete:RegisterEvent("QUEST_COMPLETE")
@@ -28,3 +43,4 @@ complete:SetScript("OnEvent", function()
 			QuestFrameCompleteButton:Click();
 		end
 end)
+
