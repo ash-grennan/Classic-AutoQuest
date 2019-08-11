@@ -2,7 +2,8 @@
 -- Name: ClassicAutoQuest
 -- Author: BobNudd
 -- Description: A minimalist auto quest acceptor/hand-in.
--- Version: 1.2.0
+-- Version: 1.3.0
+
 
 
 
@@ -14,6 +15,20 @@ qProgress:SetScript("OnEvent", function()
 	 end
 end)
 
+
+local qLogUpdate = CreateFrame("Frame")
+qLogUpdate:RegisterEvent("QUEST_GREETING")
+qLogUpdate:SetScript("OnEvent", function()
+	for index= 1, GetNumActiveQuests() do
+		local quest, isComplete = GetActiveTitle(index)
+		if isComplete then
+			SelectActiveQuest(index)
+		end
+	end
+	for index= 1, GetNumAvailableQuests() do
+		SelectAvailableQuest(index)
+	end
+end)
 
 
 local qDetail = CreateFrame("Frame")
