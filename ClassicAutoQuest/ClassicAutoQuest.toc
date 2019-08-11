@@ -2,5 +2,5 @@
 ## Title: ClassicAutoQuest
 ## Author: BobNudd
 ## Notes: A minimalist auto quest acceptor/hand-in. Happy to develop more features in the future if requested.
-## Version: 1.1.0
+## Version: 1.3.0
 ClassicAutoQuest.lua
