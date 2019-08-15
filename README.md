@@ -8,6 +8,9 @@ Currently being developed. Happy to create specific features if there's interest
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.4.0]
+
+- Quest reward(s) are now linked in chat upon accepting a quest
 
 ## [1.3.0]
 
