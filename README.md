@@ -1,6 +1,6 @@
 # Classic-AutoQuest
 
-A minimlist auto quest acceptor/hand-in. Built to be lightweight and use minimal resources.
+A minimalist auto quest acceptor/hand-in. Built to be lightweight and use minimal resources.
 
 # Features
 - Auto skip past dialog and accept quest(s)
