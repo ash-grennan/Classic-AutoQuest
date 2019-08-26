@@ -2,7 +2,7 @@
 -- Name: ClassicAutoQuest
 -- Author: BobNudd
 -- Description: A minimalist auto quest acceptor/hand-in.
--- Version: 1.4.0
+-- Version: 1.4.1
 
 local qProgress = CreateFrame("Frame")
 qProgress:RegisterEvent("QUEST_PROGRESS")
@@ -47,7 +47,7 @@ end)
  	if (not link) then
 		 _qItemLookup("QuestReward",1 ,function(self) return __QuestReward() end)
 	else
-		print("|cFF00FF00 AQ: Quest reward : ", link);
+		print("|cFF00FF00 C-AQ: Quest reward : ", link);
 	end
  end
 
