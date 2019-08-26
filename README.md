@@ -1,6 +1,13 @@
 # Classic-AutoQuest
 
-A minimlist auto quest acceptor/hand-in.
+A minimlist auto quest acceptor/hand-in. Built to be lightweight and use minimal resources.
+
+# Features
+- Auto skip past dialog and accept quest(s)
+- Auto hand in of one or more quests
+- Auto accept a quest reward if there's only one reward provided
+- Link quest rewards in chat window from a recently accepted quest
+- Won't auto accept or complete a quest which requires gold from the player 
 
 Currently being developed. Happy to create specific features if there's interest.
 
