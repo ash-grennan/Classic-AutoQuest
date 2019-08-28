@@ -7,6 +7,9 @@
 local qProgress = CreateFrame("Frame")
 qProgress:RegisterEvent("QUEST_PROGRESS")
 qProgress:SetScript("OnEvent", function()
+	if (IsShiftKeyDown()) then
+		return;
+	end
 	 if (IsQuestCompletable()) then
 		CompleteQuest();
 	 end
@@ -16,6 +19,9 @@ end)
 local qLogUpdate = CreateFrame("Frame")
 qLogUpdate:RegisterEvent("QUEST_GREETING")
 qLogUpdate:SetScript("OnEvent", function()
+	if (IsShiftKeyDown()) then
+		return;
+	end
 	for index= 1, GetNumActiveQuests() do
 		local quest, isComplete = GetActiveTitle(index)
 		if isComplete then
@@ -31,6 +37,9 @@ end)
 local qDetail = CreateFrame("Frame")
 qDetail:RegisterEvent("QUEST_DETAIL")
 qDetail:SetScript("OnEvent", function()
+	if (IsShiftKeyDown()) then
+		return;
+	end
 	local num = GetNumQuestChoices();
 	AcceptQuest();
 	if (num <= 0) then
@@ -56,6 +65,9 @@ end)
 local qGossip = CreateFrame("Frame")
 qGossip:RegisterEvent("GOSSIP_SHOW")
 qGossip:SetScript("OnEvent", function()
+	if (IsShiftKeyDown()) then
+		return;
+	end
 	if (GetNumGossipAvailableQuests() > 0) then
 		local arg = { GetGossipAvailableQuests() }
 		local i = 1
@@ -78,6 +90,9 @@ end)
 local qComplete = CreateFrame("Frame")
 qComplete:RegisterEvent("QUEST_COMPLETE")
 qComplete:SetScript("OnEvent", function()
+	if (IsShiftKeyDown()) then
+		return;
+	end
 	_QuestChoices();
 end)
 
