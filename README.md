@@ -3,6 +3,7 @@
 A minimalist auto quest acceptor/hand-in. Built to be lightweight and use minimal resources.
 
 # Features
+- Holding Shift whilst right clicking an NPC will disable the auto accept / hand in functionality
 - Auto skip past dialog and accept quest(s)
 - Auto hand in of one or more quests
 - Auto accept a quest reward if there's only one reward provided
