@@ -2,7 +2,7 @@
 -- Name: ClassicAutoQuest
 -- Author: BobNudd
 -- Description: A minimalist auto quest acceptor/hand-in.
--- Version: 1.4.1
+-- Version: 1.5.1
 
 local qProgress = CreateFrame("Frame")
 qProgress:RegisterEvent("QUEST_PROGRESS")
